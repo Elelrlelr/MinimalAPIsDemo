@@ -34,7 +34,6 @@ using (var scope = app.Services.CreateScope())
 
 // Mapping api repuests:
 
-app.MapGet("/", () => "MinimalApiDemo - Greeting...");
 app.MapInfoApi();
 // app.MapContactApi();
 
@@ -43,7 +42,8 @@ app.UseSwagger();
 app.UseSwaggerUI(c =>
                     {  
                         c.SwaggerEndpoint("/swagger/v1/swagger.json","v1");
-                        c.SwaggerEndpoint("/swagger/v2/swagger.json","v2");                       
+                        c.SwaggerEndpoint("/swagger/v2/swagger.json","v2");
+                        c.RoutePrefix = string.Empty;                       
                     }
                 );
 app.Run();
