@@ -1,7 +1,6 @@
+using MinimalApisDemo.Models;
 
 
-
-// app.UseStaticFiles();
 
 
 
@@ -35,7 +34,13 @@ public static class ContactApiExtention
             return Results.Ok(value);
         });
 
-        return app;
+        // Upgrade Minimal APi with EFcore and Sqlite
+
+        
+    
+        
+
+    return app;
 
     }
 }

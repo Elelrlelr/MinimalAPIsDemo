@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ESnbGAZGXbCuTllM6WXZkdi6sHiaEbTgjo7vk+tfOAY=",
+  "Hash": "g3hXFQCObNiNArDOuwzVj520WkP0zoglngs5taGGaf8=",
   "Source": "MinimalApisDemo",
   "BasePath": "_content/MinimalApisDemo",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "MinimalApisDemo\\wwwroot",
       "Source": "MinimalApisDemo",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\MinimalApisDemo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\dev\\MinimalApisDemo\\wwwroot\\",
       "BasePath": "_content/MinimalApisDemo",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\MinimalApisDemo\\wwwroot\\contacts.json",
+      "Identity": "C:\\Users\\Administrator\\Desktop\\dev\\MinimalApisDemo\\wwwroot\\contacts.json",
       "SourceId": "MinimalApisDemo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\MinimalApisDemo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\dev\\MinimalApisDemo\\wwwroot\\",
       "BasePath": "_content/MinimalApisDemo",
       "RelativePath": "contacts.json",
       "AssetKind": "All",
