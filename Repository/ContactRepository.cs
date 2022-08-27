@@ -1,6 +1,8 @@
 
 
 using System.Text.Json;
+using Microsoft.EntityFrameworkCore;
+using MinimalApisDemo.Models;
 
 public class ContactRepository
 {
@@ -14,4 +16,6 @@ public class ContactRepository
     {
         return JsonSerializer.Deserialize<IEnumerable<Contact>>(File.OpenRead("wwwroot/contacts.json"))?.FirstOrDefault(c => c.Id == id);
     }
+
+    
 }

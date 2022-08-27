@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Desktop\\MinimalApisDemo\\MinimalApisDemo.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\dev\\MinimalApisDemo\\MinimalApisDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Desktop\\MinimalApisDemo\\MinimalApisDemo.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\dev\\MinimalApisDemo\\MinimalApisDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\MinimalApisDemo\\MinimalApisDemo.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\dev\\MinimalApisDemo\\MinimalApisDemo.csproj",
         "projectName": "MinimalApisDemo",
-        "projectPath": "C:\\Users\\Administrator\\Desktop\\MinimalApisDemo\\MinimalApisDemo.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\dev\\MinimalApisDemo\\MinimalApisDemo.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Desktop\\MinimalApisDemo\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\dev\\MinimalApisDemo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,20 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
             "Swashbuckle": {
               "target": "Package",
               "version": "[5.6.0, )"
