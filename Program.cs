@@ -4,19 +4,14 @@ using MinimalApisDemo.Models;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.UseContactApi();
 
-// Using resoure: 
 
+// Using resoure: 
 builder.Services.UseInfoApi();
-// builder.Services.UseContactApi();
+
 
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(c => 
-                                { 
-                                    c.SwaggerDoc("v1", new() {Title="My Minimal-OpenAPI", Version="v1"});
-                                    c.SwaggerDoc("v2", new() {Title="My Future Minimal-OpenAPI", Version="v2"});
-                                }
-                              );
+builder.Services.AddSwaggerGen();
 
 
 builder.Services.AddDbContext<InfoContext>(options => 
@@ -24,6 +19,8 @@ builder.Services.AddDbContext<InfoContext>(options =>
 
 
 var app = builder.Build();
+
+
 // Seeding data
 using (var scope = app.Services.CreateScope())
 {
@@ -33,17 +30,12 @@ using (var scope = app.Services.CreateScope())
 
 
 // Mapping api repuests:
-
 app.MapInfoApi();
-// app.MapContactApi();
 
 
 app.UseSwagger();
-app.UseSwaggerUI(c =>
-                    {  
-                        c.SwaggerEndpoint("/swagger/v1/swagger.json","v1");
-                        c.SwaggerEndpoint("/swagger/v2/swagger.json","v2");
-                        c.RoutePrefix = string.Empty;                       
-                    }
-                );
+app.UseSwaggerUI(c => {
+    c.SwaggerEndpoint("/swagger/v1/swagger.json","v1");
+    c.RoutePrefix = string.Empty;
+    });
 app.Run();
